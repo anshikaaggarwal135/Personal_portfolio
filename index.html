@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jane Doe - Web Developer Portfolio</title>
+    <title>Anshika Aggarwal - Web Developer Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary-color: #2c3e50; /* Dark Blue */
-            --secondary-color: #3498db; /* Bright Blue */
+            --secondary-color: #27ae60; /* Green for VegBuddy theme */
             --background-light: #ecf0f1; /* Light Gray */
             --text-color: #34495e; /* Dark Gray */
             --white-color: #ffffff;
@@ -182,6 +182,10 @@
             color: var(--secondary-color);
             margin-bottom: 1rem;
         }
+        /* Python Icon custom color */
+        #skills .skill-item .fa-python {
+            color: #3776ab; /* Official Python blue */
+        }
 
         /* Projects Section */
         #projects {
@@ -190,7 +194,8 @@
         
         #projects .projects-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: 1fr; /* Single column */
+            justify-items: center; /* Center the single card */
             gap: 2rem;
         }
         
@@ -200,6 +205,8 @@
             overflow: hidden;
             box-shadow: 0 4px 15px rgba(0,0,0,0.1);
             transition: transform 0.3s ease;
+            max-width: 700px; /* Set a max-width for the single card */
+            width: 100%;
         }
         
         .project-card:hover {
@@ -208,7 +215,7 @@
         
         .project-card img {
             width: 100%;
-            height: 200px;
+            height: 350px; /* Adjusted height for better view */
             object-fit: cover;
         }
         
@@ -219,6 +226,7 @@
         .project-content h3 {
             font-size: 1.5rem;
             margin-bottom: 0.5rem;
+            color: var(--primary-color);
         }
         
         .project-links a {
@@ -277,6 +285,9 @@
             #home .headline {
                 font-size: 1.2rem;
             }
+            .project-card img {
+                height: 250px;
+            }
         }
     </style>
 </head>
@@ -298,7 +309,7 @@
     <main>
         <section id="home">
             <div class="hero-content">
-                 <h1>Anshika Aggarwal</h1>
+                  <h1>Anshika Aggarwal</h1>
                 <p class="headline">Front-end Web Developer | Turning Ideas into Interactive Reality</p>
                 <p>I specialize in creating modern, responsive, and user-friendly web applications using JavaScript, HTML, and CSS.</p>
             </div>
@@ -310,7 +321,7 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h3>My Background</h3>
-                        <p>Hello! I'm Anshika, a passionate web developer with a knack for building elegant and effective solutions. My journey into web development started during my university years, where I discovered a love for coding and problem-solving. Since then, I've dedicated myself to learning the latest technologies and best practices in the industry.</p>
+                        <p>Hello! I'm Anshika, a passionate developer with a knack for building elegant and effective solutions. My journey into development started during my university years, where I discovered a love for coding, problem-solving, and artificial intelligence. Since then, I've dedicated myself to learning the latest technologies and best practices in the industry.</p>
                         <h3>Education & Experience</h3>
                           </div>
                     <div class="about-image">
@@ -325,46 +336,24 @@
                 <h2 class="section-title">My Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-item"><i class="fab fa-html5"></i><p>HTML5</p></div>
-                    <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
                     <div class="skill-item"><i class="fab fa-js-square"></i><p>JavaScript</p></div>
-                     <div class="skill-item"><i class="fab fa-git-alt"></i><p>Git</p></div>
-                   
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i><p>CSS3</p></div>
+                    <div class="skill-item"><i class="fab fa-git-alt"></i><p>Git</p></div>
+                    <div class="skill-item"><i class="fab fa-python"></i><p>Python</p></div>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">My Projects</h2>
+                <h2 class="section-title">My Project</h2>
                 <div class="projects-grid">
                     <div class="project-card">
-                        <img src="https://picsum.photos/seed/project1/400/200" alt="Project 1 Screenshot"> 
+                        <img src="https://images.unsplash.com/photo-1525455246283-1694f686944e?q=80&w=1932&auto=format&fit=crop" alt="VegBuddy Chatbot Project">
                         <div class="project-content">
-                            <h3>E-commerce Platform</h3>
-                            <p>A full-featured online store built with the MERN stack (MongoDB, Express, React, Node.js), including payment gateway integration and an admin dashboard.</p>
+                            <h3>VegBuddy Chatbot 🤖🥕</h3>
+                            <p>An intelligent and friendly chatbot designed to help users discover delicious vegetarian recipes so the user can either watch the recipe or order them. Built using IBM cloud , VegBuddy makes eating simple and fun. The project is integrated into a clean, user-friendly web interface.</p>
                             <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://picsum.photos/seed/project2/400/200" alt="Project 2 Screenshot"> -->
-                        <div class="project-content">
-                            <h3>Task Management App</h3>
-                            <p>A sleek and intuitive task management application built with React and Firebase, featuring real-time updates and user authentication.</p>
-                             <div class="project-links">
-                                <a href="#" target="_blank">Live Demo</a>
-                                <a href="#" target="_blank">GitHub</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://picsum.photos/seed/project3/400/200" alt="Project 3 Screenshot">
-                        <div class="project-content">
-                            <h3>Personal Portfolio</h3>
-                            <p>This very portfolio website, designed to be clean, responsive, and showcase my skills. Built from scratch with HTML, CSS, and vanilla JS.</p>
-                             <div class="project-links">
                                 <a href="#" target="_blank">Live Demo</a>
                                 <a href="#" target="_blank">GitHub</a>
                             </div>
@@ -390,8 +379,10 @@
             </div>
         </section>
     </main>
-    
-   
+
+    <footer>
+        <p>&copy; 2025 Anshika Aggarwal. All Rights Reserved.</p>
+    </footer>
 
     <script>
         // JavaScript for Navbar scroll effect and active link highlighting
